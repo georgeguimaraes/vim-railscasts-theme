@@ -26,15 +26,17 @@ let g:colors_name = "railscasts"
 " Light Green  #A5C261
 " Tan          #FFC66D
 
-hi Normal                    guifg=#E6E1DC guibg=#2B2B2B
+hi Normal                    guifg=#E6E1DC guibg=#232323
 hi Cursor                    guibg=#FFFFFF
-hi CursorLine                guibg=#333435
+" hi CursorLine                guibg=#333435
+hi CursorLine                guibg=#111111 ctermbg=233 cterm=NONE
+hi CursorColumn              guibg=#252525 ctermbg=233 cterm=NONE
 hi Search                    guibg=#5A647E
 hi Visual                    guibg=#5A647E
 hi LineNr                    guibg=#333435 guifg=#777777 gui=NONE
-hi StatusLine                guibg=#414243 gui=NONE
+hi StatusLine                guibg=#414243 gui=NONE guifg=#E6E1DC
 hi StatusLineNC              guibg=#414243 gui=NONE
-hi VertSplit                 guibg=#414243 gui=NONE
+hi VertSplit                 guibg=#414243 gui=NONE guifg=#414243
 
 " Folds
 " -----
@@ -76,7 +78,8 @@ hi Constant                  guifg=#6D9CBE
 hi Define                    guifg=#CC7833
 
 "rubyInterpolation
-hi Delimiter                 guifg=#519F50
+hi Delimiter                  guifg=#519F50
+hi rubyInterpolationDelimiter guifg=#DA4939
 
 "rubyError, rubyInvalidVariable
 hi Error                     guifg=#FFFFFF guibg=#990000
